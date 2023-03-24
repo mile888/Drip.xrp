@@ -1,0 +1,42 @@
+{% block title %} Home page {% endblock %}
+{% block content %} 
+<head>
+<style>
+    table {
+      border: 1px solid black;
+    }
+    table th {
+      padding: 10px; 
+      background: #ddd;
+    }
+    table td {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Events</h1>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Price</th>
+      <th>Order</th>
+    </tr>
+    {% for id in event %}
+    <tr>
+      <td>{{ event[id].name }}</td>
+      <td>{{ event[id].date }}</td>
+      <td>{{ event[id].price}} XRP</td>
+      <td>
+        <form method="POST" action="/event">
+          <input type="text" hidden name="id" value={{id}}>
+          <input type="text" hidden name="number" value={{event[id].number}}>
+          <input type="submit" value="Buy Ticket!" />
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+{% endblock %}
