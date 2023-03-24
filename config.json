@@ -1,0 +1,16 @@
+{"event_1" : {
+    "name" : "event_1",
+    "number" : 70,
+    "price": 10000
+             },
+ "event_2" : {
+    "name" : "event_2",
+    "number" : 100,
+    "price": 15000
+            },
+"event_3" : {
+    "name" : "event_3",
+    "number" : 100,
+    "price": 15000
+            }
+}

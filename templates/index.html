@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %} Home page {% endblock %}
+{% block content %} 
+<head>
+<style>
+    table {
+      border: 1px solid black;
+    }
+    table th {
+      padding: 10px; 
+      background: #ddd;
+    }
+    table td {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Buying online ticket with XRP</h1>
+  <table>
+    <tr>
+      <th>Ticket</th>
+      <th>Price</th>
+      <th>Order</th>
+    </tr>
+    {% for id in tickets %}
+    <tr>
+      <td>{{ tickets[id].name }}</td>
+      <td>
+        {{ "%.2f"|format(tickets[id].price) }} XRP
+      </td>
+      <td>
+        <form method="POST" action="/order/{{id}}">
+          <input type="submit" value="Buy Now!">
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+{% endblock %}
