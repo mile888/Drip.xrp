@@ -1,2 +1,2 @@
-# xrp_buy_ticket
+# Drip.xrp
  
