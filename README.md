@@ -1,8 +1,10 @@
 # Drip.xrp
 
-We have two configurations:
+![gif](assets/gif-drip.gif)
 
-## 1. Frontend and localhost are in the localhost
+Follow these instrtuction/configurations in order to test it on your own.
+
+## Frontend and localhost are in the localhost
 
 ### Backend config:
 ```
@@ -18,8 +20,8 @@ cd drip-frontend
 npm i
 npm run dev # it will be running on the port 3000
 ```
-Then open the this [link](http://localhost:3000) in a browser
+Then open the this [link](http://localhost:3000) on the browser
 
 ![image](assets/bg.png)
 
-To run the backend, you need Ngrok to allow an incoming request from the web to connect to the local instance
+To run the backend, you need Ngrok to allow incoming request from the web to connect the local instance
