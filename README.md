@@ -20,4 +20,6 @@ npm run dev # it will be running on the port 3000
 ```
 Then open the this [link](http://localhost:3000) on the browser
 
+![image](assets/bg.png)
+
 To run the backend, you need Ngrok to allow incoming request from the web to connect the local instance
